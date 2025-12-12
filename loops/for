@@ -1,0 +1,106 @@
+#  advance learning all main concepts ----
+
+# starting with for loops--
+
+# 1st ques--
+'''
+for i in range (1,6):
+  print(i, end=" ")
+'''
+
+# 2nd ques--
+
+'''for i in range (1,6):
+  print(i ** 2, end=" ")'''
+
+# 3rd ques--  
+
+'''
+for i in range(1, 11):
+    if i%2 == 0:
+        print(i, end=" ")'''
+
+# 4th ques---
+
+'''
+total = 0
+for i in range (1,11):
+    total += i
+print(f"the total sum is {total}")    '''
+
+
+
+# 5th ques--
+
+'''
+word = "vasudev"
+
+for i in range (len(word) - 1, -1, -1):
+    print(word[i], end= ' ')
+'''
+
+# 6th ques--
+
+'''
+vowels = "aeiou"
+word = "education"
+count = 0
+
+for i in word:
+    if i in vowels:
+        count += 1
+print(f"there are {count} vowels in {word}")     '''   
+
+# 7th ques--
+
+'''
+a = 0 
+b = 1
+print(a, b, end=" ")
+# 1 1 2
+
+for _ in range(8):
+    next_term = a + b
+    print(next_term, end=" ")
+    a,b = b, next_term'''
+
+# 8th ques--
+
+'''
+n = 10
+factorial = 1
+for i in range(1, n+1):
+    factorial *= i
+print(f"factorial of {n} is {factorial}")'''
+
+# 9th ques--
+
+'''
+num = int(input("Enter a number: "))
+is_prime = True
+
+for i in range(2, int(25 ** 0.5) + 1):
+    if num % i == 0:
+        is_prime = False
+        break
+
+if is_prime and num > 1:
+    print(num, " is a prime number")    
+else:
+    print(num, " is not a prime number")    '''
+
+
+# 10th ques--
+
+
+
+word = input("enter a word: ")
+char_count = {}
+
+for char in word:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+for char, count in char_count.items():
+    print(char + ':', count)            
